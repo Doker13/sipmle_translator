@@ -122,4 +122,3 @@ int dictionary_check(char *name) {
   fclose(fp);
   return 0;
 }
-

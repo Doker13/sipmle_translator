@@ -15,7 +15,6 @@ int main(int argc, char *argv[]) {
     return -1;
   }
   int lines = ammount_of_lines(argv[2]);
-
   dictionary *d = NULL;
   d = create_dictionary(argv[2], lines);
 

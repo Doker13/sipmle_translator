@@ -168,7 +168,7 @@ wchar_t *word_replace(wchar_t *output, wchar_t *word, wchar_t *translation) {
           k++;
         }
       } else {
-        output = realloc(output, (wcslen(translation) + wcslen(output)) * sizeof(wchar_t));
+        output = realloc(output, (wcslen(translation) + wcslen(output) + 1) * sizeof(wchar_t));
         if (!output){
         return NULL;
         }
@@ -185,7 +185,7 @@ wchar_t *word_replace(wchar_t *output, wchar_t *word, wchar_t *translation) {
 }
 
 wchar_t *replacer(wchar_t *input, dictionary *d, int lines) {
-  wchar_t *output = calloc(wcslen(input), sizeof(wchar_t));
+  wchar_t *output = calloc(wcslen(input) + 1, sizeof(wchar_t));
   if (!output) {
     input_free(input);
     dictionary_free(lines, d);
