@@ -1,2 +1,4 @@
-Tyger - Тигр
-Fear - страх
+Тигр - Tyger
+Страх - Fear
+Ты - You
+Взор - Eye
